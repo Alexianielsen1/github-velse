@@ -65,4 +65,90 @@ nav ul li a:hover {
 .cards {
   display: flex;
   text-align: center;
+  margin-bottom: 100px;
+}
+
+.process {
+  display: flex;
+}
+.process .process-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  background-color: #2a7c6f;
+}
+.process img {
+  width: 400px;
+  height: auto;
+  max-width: 300px;
+}
+
+.contact {
+  background-image: url("../img/microsoft-365-oUbzU87d1Gc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #fff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2a7c6f;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #2a7c6f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1e5d53;
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */
