@@ -46,16 +46,21 @@ nav ul li a:hover {
   height: 400px;
   color: #000000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   -webkit-text-stroke: 1px #ffffff;
+  color: #000;
 }
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 .services h2 {
@@ -151,4 +156,65 @@ input:focus, textarea:focus {
 .submit-btn:hover {
   background-color: #1e5d53;
   transform: scale(1.05);
+}
+
+button {
+  background-color: #2a7c6f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1e5d53;
+  transform: scale(1.05);
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  background-color: #123d35;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+footer .footer-container .footer-info {
+  text-align: left;
+}
+footer .footer-container .footer-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-info p {
+  margin: 5px 0;
+}
+footer .footer-container .footer-logo img {
+  height: 50px;
+}
+footer .footer-bottom {
+  background-color: #0f2e29;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+footer .footer-bottom p {
+  margin: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

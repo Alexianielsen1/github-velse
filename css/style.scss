@@ -46,26 +46,31 @@ nav {
     }
 }
 
-.hero{
+.hero {
     background: url('../img/tyler-franta-iusJ25iYu1c-unsplash.jpg') no-repeat center center;
     background-size: cover;
     height: 400px; // Fast højde
     color: #000000;
     text-align: center;
 
+    display: flex; // Brug Flexbox
+    flex-direction: column; // Placer elementer i en kolonne
+    justify-content: center; // Centrer vertikalt
+    align-items: center; // Centrer horisontalt
+
     h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        -webkit-text-stroke: 1px #ffffff;
+        -webkit-text-stroke: 1px #ffffff; // Tynd hvid stroke
+        color: #000; // Sort tekst
     }
 
     p {
         font-size: 1.2rem;
         max-width: 600px;
-        margin: 0 auto;
+        margin: 0 auto 1rem auto; // Centrer teksten og tilføj luft under
     }
 }
-
 .services{
     h2{
         text-align: center;
@@ -168,4 +173,72 @@ input:focus, textarea:focus {
 .submit-btn:hover {
     background-color: #1e5d53; // Mørkere primærfarve
     transform: scale(1.05); // Lidt større ved hover
+}
+
+button {
+    background-color: #2a7c6f; // Primærfarve
+    color: #fff; // Hvid tekst
+    border: none; // Fjern kant
+    border-radius: 5px; // Afrundede hjørner
+    padding: 10px 20px; // Indre luft
+    margin: 10px;
+    font-size: 16px; // Tekststørrelse
+    font-weight: bold; // Fed tekst
+    cursor: pointer; // Markør som hånd
+    transition: background-color 0.3s, transform 0.2s; // Glidende overgang ved hover
+}
+
+button:hover {
+    background-color: #1e5d53; // Mørkere primærfarve ved hover
+    transform: scale(1.05); // Lidt større ved hover
+}
+
+button a {
+    text-decoration: none; // Fjern understregning
+    color: inherit; // Arv tekstfarve fra knappen
+}
+
+footer {
+    background-color: #123d35; // Mørk grøn baggrund
+    color: #fff; // Hvid tekst
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+        .footer-info {
+            text-align: left;
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+        }
+
+        .footer-logo img {
+            height: 50px; // Juster logoets højde
+        }
+    }
+
+    .footer-bottom {
+        background-color: #0f2e29; // En mørkere grøn nuance
+        padding: 10px 0;
+        margin-top: 20px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
 }
